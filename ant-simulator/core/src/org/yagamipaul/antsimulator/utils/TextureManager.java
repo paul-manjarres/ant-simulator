@@ -13,6 +13,8 @@ import com.badlogic.gdx.graphics.Texture;
  */
 public class TextureManager {
 
-	public static Texture ANT_TEXTURE = new Texture(Gdx.files.internal("fourmi_xs.png"));
+	public static Texture ANT_TEXTURE = new Texture(Gdx.files.internal("fourmi_xs2.png"));
+
+	public static Texture FOOD_TEXTURE = new Texture(Gdx.files.internal("food-oats-50px.png"));
 
 }

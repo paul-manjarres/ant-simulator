@@ -6,6 +6,7 @@ package org.yagamipaul;
 import org.yagamipaul.antsimulator.entity.Ant;
 import org.yagamipaul.antsimulator.entity.Entity;
 import org.yagamipaul.antsimulator.entity.EntityManager;
+import org.yagamipaul.antsimulator.entity.Food;
 import org.yagamipaul.antsimulator.utils.Screen;
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -29,9 +30,18 @@ public class GameScreen extends Screen {
 		entityManager = new EntityManager();
 
 
-		Ant newAnt = new Ant(new Vector2(100, 20), Vector2.Zero);
 
-		entityManager.addEntity(newAnt);
+		Food newFood = new Food(new Vector2(500, 500));
+		entityManager.addEntity(newFood);
+
+		for (int i = 0; i <5; i++) {
+			Ant newAnt = new Ant(new Vector2(100+i*20, 20+i*20), Vector2.Zero);
+			entityManager.addEntity(newAnt);
+		}
+
+
+
+
 
 
 	}
